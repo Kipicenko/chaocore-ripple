@@ -2,7 +2,7 @@
 
 The very easy, performance and flexible to use JavaScript/TypeScript library for creating a ripple effect.
 
-## Installing
+### Installing
 
 Using npm:
 
@@ -34,7 +34,7 @@ or
 <script defer src="https://unpkg.com/@chaocore/ripple"></script>
 ```
 
-## Usage
+### Usage
 - - -
 
 **React**
@@ -59,7 +59,7 @@ btn.addEventListener("pointerdown", (event) => {
 })
 ```
 
-## Options
+### Options
 
 | Name                 |     Default      | Type      | 
 |----------------------|:----------------:|-----------|
@@ -73,12 +73,12 @@ btn.addEventListener("pointerdown", (event) => {
 | considerDisabledAttr |      `true`      | `boolean` |
 | turnOff              |     `false`      | `boolean` |
 
-## Description of options
+### Description of options
 
 | Name                 | Description                                                                                                                                                                                                                                                                                                   | 
 |----------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | color                | Defines the color of the ripple.                                                                                                                                                                                                                                                                              |
-| easing               | Any valid CSS [<transition-timing-function>](https://developer.mozilla.org/en-US/docs/Web/CSS/transition-timing-function).                                                                                                                                                                                    |
+| easing               | Any valid CSS [transition-timing-function](https://developer.mozilla.org/en-US/docs/Web/CSS/transition-timing-function).                                                                                                                                                                                      |
 | duration             | The duration of the ripple in milliseconds.                                                                                                                                                                                                                                                                   |
 | dissolveDuration     | The dissolve duration of the ripple in milliseconds.<br/>Starts after the end of the main duration.                                                                                                                                                                                                           |
 | delay                | The animation delay in milliseconds during which the animation maybe canceled if the current pointer action is interrupted for some reason and pointer events are no longer generated.<br/>[Read about the pointercancel event](https://developer.mozilla.org/en-US/docs/Web/API/Element/pointercancel_event) |

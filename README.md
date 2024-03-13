@@ -55,7 +55,7 @@ function MyComponent() {
 const btn = document.querySelector(".btn");
 
 btn.addEventListener("pointerdown", (event) => {
-    createEffectRipple(event, btn, options)
+    createEffectRipple(event, btn, options) // or window.createEffectRipple
 })
 ```
 

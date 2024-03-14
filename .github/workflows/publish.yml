@@ -36,6 +36,9 @@ jobs:
           git config user.email $GITHUB_ACTOR@users.noreply.github.com
           npm version ${{ github.event.inputs.version }}
 
+      - name: Deleting the postinstall script in package.json before publishing
+        run: npm pkg delete scripts.postinstall
+
       - name: Publishing the package
         run: npm publish
         env:

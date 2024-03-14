@@ -9,7 +9,7 @@
   "description": "The very easy, performance and flexible to use JavaScript/TypeScript library for creating a ripple effect.",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
-  "unpkg": "dist/iife/index.js",
+  "unpkg": "dist/iife/index.min.js",
   "types": "dist/types/index.d.ts",
   "files": [
     "dist"

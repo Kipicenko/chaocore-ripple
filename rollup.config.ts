@@ -48,7 +48,6 @@ const build_iife: RollupOptions = {
         format: "iife",
         name: "window",
         extend: true,
-        // compact: true,
     },
     plugins: [typescript({ noEmitOnError: true }), terser()],
 };

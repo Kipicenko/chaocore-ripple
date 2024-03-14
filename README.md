@@ -2,6 +2,10 @@
 
 The very easy, performance and flexible to use JavaScript/TypeScript library for creating a ripple effect.
 
+### Demonstration
+
+![Demonstration library](https://raw.githubusercontent.com/Kipicenko/chaocore-ripple/assets/demonstration.gif)
+
 ### Installing
 
 Using npm:

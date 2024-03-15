@@ -68,7 +68,7 @@ btn.addEventListener("pointerdown", (event) => {
 | Name                 |     Default      | Type      | 
 |----------------------|:----------------:|-----------|
 | color                | `"currentColor"` | `string`  |
-| easing               |    `ease-out`    | `string`  |
+| easing               |   `"ease-out"`   | `string`  |
 | duration             |     `400ms`      | `number`  |
 | dissolveDuration     |     `300ms`      | `number`  |
 | delay                |      `75ms`      | `number`  |
@@ -88,7 +88,7 @@ btn.addEventListener("pointerdown", (event) => {
 | delay                | The animation delay in milliseconds during which the animation maybe canceled if the current pointer action is interrupted for some reason and pointer events are no longer generated.<br/>[Read about the pointercancel event](https://developer.mozilla.org/en-US/docs/Web/API/Element/pointercancel_event) |
 | initialOpacity       | The opacity of the ripple at the beginning of the animation.                                                                                                                                                                                                                                                  |
 | finalOpacity         | The opacity of the ripple at the end of the animation.                                                                                                                                                                                                                                                        |
-| considerDisabledAttr | Don't display a ripple effect if the element has the disable attribute.                                                                                                                                                                                                                                       |
+| considerDisabledAttr | Don't display a ripple effect if the element has the disabled attribute.                                                                                                                                                                                                                                      |
 | turnOff              | Don't display a ripple effect.                                                                                                                                                                                                                                                                                |
 
 ### License

@@ -6,10 +6,10 @@ import { defaultOptions, OptionsRippleType } from "./options";
  *   const btn = document.querySelector(".btn");
  *
  *   btn.addEventListener("pointerdown", (event) => {
- *       createEffectRipple(event, btn, options)
+ *       createRippleEffect(event, btn, options)
  *   }
  */
-export function createEffectRipple(
+export function createRippleEffect(
     event: PointerEvent,
     el: HTMLElement,
     userOptions: Partial<OptionsRippleType> = {},
@@ -23,7 +23,7 @@ export function createEffectRipple(
     const computedStyles: CSSStyleDeclaration = window.getComputedStyle(el);
     const rect: DOMRect = el.getBoundingClientRect();
 
-    const { x, y } = getCoordinates(event, rect);
+    const { x, y } = getClickCoordinates(event, rect);
 
     const maxX: number = Math.max(x, rect.width - x);
     const maxY: number = Math.max(y, rect.height - y);
@@ -78,13 +78,14 @@ export function createEffectRipple(
         rippleContainer.remove();
 
         decrementRippleCount(el);
+        const count = getRippleCount(el);
 
-        if (getRippleCount(el) === 0 && el.hasAttribute("data-temporary-relative")) {
+        if (count === 0 && el.hasAttribute("data-temporary-relative")) {
             el.style.position = "";
             el.removeAttribute("data-temporary-relative");
         }
 
-        if (getRippleCount(el) === 0) deleteRippleCount(el);
+        if (count === 0) deleteRippleCount(el);
     }
 
     function pointerEventUp(): void {
@@ -112,7 +113,7 @@ export function createEffectRipple(
     };
 }
 
-function getCoordinates({ clientX, clientY }: PointerEvent, { left, top }: DOMRect): { x: number; y: number } {
+function getClickCoordinates({ clientX, clientY }: PointerEvent, { left, top }: DOMRect): { x: number; y: number } {
     return {
         x: clientX - left,
         y: clientY - top,

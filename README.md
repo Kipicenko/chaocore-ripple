@@ -49,7 +49,7 @@ import { useRipple } from "@chaocore/ripple";
 function MyComponent() {
     const ripple = useRipple(options);
 
-    return <div ref={ripple} className="btn">Click Here</div>
+    return <button ref={ripple} className="btn">Click Here</button>
 }
 ```
 
@@ -59,7 +59,7 @@ function MyComponent() {
 const btn = document.querySelector(".btn");
 
 btn.addEventListener("pointerdown", (event) => {
-    createEffectRipple(event, btn, options) // or window.createEffectRipple
+    createRippleEffect(event, btn, options) // or window.createRippleEffect
 })
 ```
 

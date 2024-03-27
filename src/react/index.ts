@@ -1,11 +1,11 @@
 import { OptionsRippleType } from "../options";
-import { createEffectRipple } from "../rippleCore";
+import { createRippleEffect } from "../rippleCore";
 
 const reactElementsMap = new WeakMap<HTMLElement, Partial<OptionsRippleType>>();
 
 function bindRippleEffect(el: HTMLElement) {
     el.addEventListener("pointerdown", (event: PointerEvent) => {
-        createEffectRipple(event, el, reactElementsMap.get(el));
+        createRippleEffect(event, el, reactElementsMap.get(el));
     });
 }
 
@@ -17,7 +17,7 @@ function bindRippleEffect(el: HTMLElement) {
  *   function MyComponent() {
  *       const ripple = useRipple(options);
  *
- *       return <div ref={ripple} className="btn">Click Here</div>
+ *       return <button ref={ripple} className="btn">Click Here</button>
  *   }
  */
 export function useRipple(options: Partial<OptionsRippleType> = {}) {

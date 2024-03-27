@@ -1,3 +1,3 @@
 export { OptionsRippleType } from "./options";
-export { createEffectRipple } from "./rippleCore";
+export { createRippleEffect } from "./rippleCore";
 export { useRipple } from "./react";

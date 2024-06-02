@@ -6,7 +6,7 @@
       "esNext"
     ],
     "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
+//  "allowImportingTsExtensions": true,
     "removeComments": true,
     "resolveJsonModule": true,
     "baseUrl": ".",

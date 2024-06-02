@@ -1,11 +1,12 @@
 {
   "compilerOptions": {
-    "target": "es2018",
+    "target": "es2021",
     "lib": [
       "dom",
       "esNext"
     ],
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
     "removeComments": true,
     "resolveJsonModule": true,
     "baseUrl": ".",

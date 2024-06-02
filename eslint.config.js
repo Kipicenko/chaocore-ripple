@@ -7,7 +7,7 @@ export default tsEslint.config(
     ...tsEslint.configs.recommended,
     eslintPluginPrettierRecommended,
     {
-        ignores: ["dist/", "node_modules/"],
+        ignores: ["dist/", "node_modules/", ".pnp.*"],
     },
     {
         files: ["src/**/*.ts", "rollup.config.ts"],

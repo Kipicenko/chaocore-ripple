@@ -3,6 +3,7 @@ dist/
 .idea/
 .vscode/
 .yarn/
+.pnp.*
 
 # dotenv environment variable files
 .env

@@ -1,16 +1,19 @@
 {
   "name": "@chaocore/ripple",
+  "description": "The very easy, performance and flexible to use JavaScript/TypeScript library for creating a ripple effect.",
   "version": "1.1.2",
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org"
   },
   "type": "module",
-  "description": "The very easy, performance and flexible to use JavaScript/TypeScript library for creating a ripple effect.",
-  "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
-  "unpkg": "dist/iife/index.min.js",
-  "types": "dist/types/index.d.ts",
+  "types": "./dist/types/index.d.ts",
+  "exports": {
+    "types": "./dist/types/index.d.ts",
+    "require": "./dist/cjs/index.cjs",
+    "import": "./dist/esm/index.js"
+  },
+  "unpkg": "./dist/iife/index.min.js",
   "files": [
     "dist"
   ],
